@@ -29,7 +29,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10">
         <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold text-ink">
           <TerminalSquare className="h-5 w-5 text-cyan" />
-          Atyan<span className="text-red">.</span>Dev
+          Atyan<span className="text-red">.</span>Developer
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
