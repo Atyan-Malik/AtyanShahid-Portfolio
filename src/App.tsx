@@ -7,6 +7,7 @@ import Experience from "@/components/sections/Experience";
 import TechStack from "@/components/sections/TechStack";
 import Contact from "@/components/sections/Contact";
 import Projects from "@/components/sections/Projects";
+import ScrollToTop from "@/components/ui/ScrollToTop"
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <TechStack />
         <Projects />
         <Contact />
+          <ScrollToTop />
       </main>
 
       <Footer />
