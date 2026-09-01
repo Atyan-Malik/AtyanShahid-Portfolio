@@ -197,8 +197,8 @@ const projects = [
     ],
     image: "/images/mobile4.jfif",
     source_code_link:
-      "https://github.com/Areesha-sites/Hackathon_Admin_Panel.git",
-    liveLink: "https://hackathon-admin-panel-azure.vercel.app/",
+      "https://github.com/Atyan-Malik/Bookly-Appointment-Booking-Mobile-App.git",
+    liveLink: "https://github.com/Atyan-Malik/Bookly-Appointment-Booking-Mobile-App.git",
   },
 
   {
