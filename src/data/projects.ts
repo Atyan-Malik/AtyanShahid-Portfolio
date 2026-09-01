@@ -20,8 +20,8 @@ const projects = [
     image: "/images/portfolio-7.png",
     source_code_link:
       "https://github.com/Atyan-Malik/SkillArena-online-learning-platform.git",
-    LiveLink:
-      "https://github.com/Atyan-Malik/SkillArena-online-learning-platform.git",
+    liveLink:
+      "https://skill-arena-online-learning-platform.vercel.app/",
   },
 
   {
@@ -149,7 +149,7 @@ const projects = [
     source_code_link:
       "https://github.com/Atyan-Malik/Delicious-Cafe-Store.git",
     liveLink:
-      "https://github.com/Atyan-Malik/Delicious-Cafe-Store.git",
+      "https://delicious-cafe.vercel.app/",
   },
 
   {
