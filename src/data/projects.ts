@@ -46,7 +46,7 @@ const projects = [
     source_code_link:
       "https://github.com/Atyan-Malik/Kaggle-premium-Shoes-Store.git",
     liveLink:
-      "https://github.com/Atyan-Malik/Kaggle-premium-Shoes-Store.git",
+      "https://kaggle-premium-shoes-store.vercel.app/",
   },
 
   {
