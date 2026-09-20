@@ -48,11 +48,9 @@ const projects = [
     liveLink:
       "https://kaggle-premium-shoes-store.vercel.app/",
   },
-
   {
-    name: "Travel Booking Website",
-    description:
-      "A full-stack travel booking platform built with React.js, Node.js, and MongoDB. Features include destination discovery, tour listings, travel booking functionality, RESTful APIs, and a responsive interface for a smooth travel planning experience.",
+    name: "Manzil.pk Hotel Booking Platform",
+    description:"A full-stack hotel booking platform focused on the Pakistani market, built to provide travelers with a simple way to discover, filter, explore, and book hotels across major destinations in Pakistan.",
     tags: [
       {
         name: "reactjs",
@@ -67,10 +65,39 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/images/portfolio-01.png",
+    image: "/images/portfolio-02.png",
     source_code_link:
-      "https://github.com/Atyan-Malik/MERN-Stack-Tour-Booking-Website.git",
-    liveLink: "https://global-glimpsesfrontend.vercel.app/",
+      "https://github.com/Atyan-Malik/Manzil.pk-hotel-booking-platform-zynvex-solutions.git",
+    liveLink:
+      "https://drive.google.com/file/d/1u85TxGWCOr_uY-QepeW8KNBqWPynztQ7/view?usp=sharing",
+  },
+  {
+    name: "Delicious-Cafe-Store",
+    description:
+      "A modern cafe and food ordering website built with React.js, Django, PostgreSQL, and Tailwind CSS. Features include food browsing, menu management, product details, responsive layouts, and a clean user experience for exploring cafe products.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/images/portfolio-04.png",
+    source_code_link:
+      "https://github.com/Atyan-Malik/Delicious-Cafe-Store.git",
+    liveLink:
+      "https://delicious-cafe.vercel.app/",
   },
 
   {
@@ -123,35 +150,30 @@ const projects = [
       "https://github.com/Atyan-Malik/MERN-Stack-Medico-Health-Care-Website.git",
   },
 
-  {
-    name: "Delicious-Cafe-Store",
+  
+{
+    name: "Travel Booking Website",
     description:
-      "A modern cafe and food ordering website built with React.js, Django, PostgreSQL, and Tailwind CSS. Features include food browsing, menu management, product details, responsive layouts, and a clean user experience for exploring cafe products.",
+      "A full-stack travel booking platform built with React.js, Node.js, and MongoDB. Features include destination discovery, tour listings, travel booking functionality, RESTful APIs, and a responsive interface for a smooth travel planning experience.",
     tags: [
       {
         name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "Django",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "postgresql",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: "/images/portfolio-04.png",
+    image: "/images/portfolio-01.png",
     source_code_link:
-      "https://github.com/Atyan-Malik/Delicious-Cafe-Store.git",
-    liveLink:
-      "https://delicious-cafe.vercel.app/",
+      "https://github.com/Atyan-Malik/MERN-Stack-Tour-Booking-Website.git",
+    liveLink: "https://global-glimpsesfrontend.vercel.app/",
   },
-
   {
     name: "Kaggle E-commerce Mobile App",
     description:
@@ -201,30 +223,7 @@ const projects = [
     liveLink: "https://github.com/Atyan-Malik/Bookly-Appointment-Booking-Mobile-App.git",
   },
 
-  {
-    name: "Real Estate Website",
-    description:
-      "A modern real estate platform built with React.js, Node.js, and MongoDB. Features include property listings, property details, real estate discovery, backend integration, responsive layouts, and a user-friendly interface for exploring available properties.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "/images/portfolio-02.png",
-    source_code_link:
-      "https://github.com/Atyan-Malik/Real-Estate-React.js-Website.git",
-    liveLink:
-      "https://github.com/Atyan-Malik/Real-Estate-React.js-Website.git",
-  },
+
 ];
 
 export { projects };
