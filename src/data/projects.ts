@@ -21,7 +21,7 @@ const projects = [
     source_code_link:
       "https://github.com/Atyan-Malik/SkillArena-online-learning-platform.git",
     liveLink:
-      "https://skill-arena-online-learning-platform.vercel.app/",
+      "https://drive.google.com/file/d/1tIZ88rIdzf2qLPJrx8-NEfJ_DNl2_0iW/view?usp=sharing",
   },
 
   {
