@@ -1,8 +1,8 @@
+
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../ui/index";
 import { AnimatedPinDemo } from "./AnimatedPinDemo";
-import { styles } from "../../styles";
-
+import SectionHeading from "../ui/SectionHeading";
 
 const Works = () => {
   return (
@@ -33,68 +33,44 @@ const Works = () => {
 
       {/* Everything below stays above particles */}
       <div className="relative z-10">
-        {/* Section Header */}
+        {/* Section Heading */}
+        <SectionHeading eyebrow="// my work" title="Projects" />
+
+        {/* Decorative elements */}
         <motion.div
-          className="relative z-10 w-full"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{ duration: 0.6 }}
+          className="mt-4 flex items-center gap-2"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
         >
-          <motion.p
-            className={`${styles.sectionSubText} relative inline-block`}
-          >
-            My work
-
-            <motion.span
-              className="absolute -bottom-1 left-0 h-[2px] bg-[#ff2d55]"
-              initial={{ width: 0 }}
-              whileInView={{ width: "100%" }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            />
-          </motion.p>
-
-          <h2 className={`${styles.sectionHeadText} mt-2`}>
-            Projects.
-          </h2>
-
-          {/* Decorative elements */}
           <motion.div
-            className="mt-4 flex items-center gap-2"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-          >
-            <motion.div
-              className="h-2 w-2 rounded-full bg-[#00e5ff]"
-              animate={{
-                scale: [1, 1.5, 1],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
+            className="h-2 w-2 rounded-full bg-[#00e5ff]"
+            animate={{
+              scale: [1, 1.5, 1],
+              opacity: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
 
-            <div className="h-[2px] w-16 bg-gradient-to-r from-[#00e5ff] to-transparent" />
+          <div className="h-[2px] w-16 bg-gradient-to-r from-[#00e5ff] to-transparent" />
 
-            <motion.div
-              className="h-2 w-2 rounded-full bg-[#00e5ff]"
-              animate={{
-                scale: [1, 1.5, 1],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1,
-              }}
-            />
-          </motion.div>
+          <motion.div
+            className="h-2 w-2 rounded-full bg-[#00e5ff]"
+            animate={{
+              scale: [1, 1.5, 1],
+              opacity: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1,
+            }}
+          />
         </motion.div>
 
         {/* Description */}
@@ -141,6 +117,5 @@ const Works = () => {
     </div>
   );
 };
-
 
 export default SectionWrapper(Works, "projects");

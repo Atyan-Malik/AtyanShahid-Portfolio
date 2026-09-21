@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, TerminalSquare } from "lucide-react";
@@ -12,7 +13,9 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
+
     window.addEventListener("scroll", onScroll);
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -23,15 +26,29 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-colors duration-300",
-        scrolled ? "bg-void/85 backdrop-blur-md border-b border-line" : "bg-transparent"
+        scrolled
+          ? "bg-void/85 backdrop-blur-md border-b border-line"
+          : "bg-transparent"
       )}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10">
-        <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold text-ink">
-          <TerminalSquare className="h-5 w-5 text-cyan" />
-          Atyan<span className="text-red">.</span>Developer
+        {/* Brand */}
+        <a
+          href="#top"
+          className="flex items-center gap-2 text-ink"
+        >
+          <TerminalSquare className="h-5 w-5 shrink-0 text-cyan" />
+
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-lg font-bold tracking-tight sm:text-xl">
+              Atyan Shahid
+            </span>
+
+            
+          </span>
         </a>
 
+        {/* Desktop Navigation */}
         <ul className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.id}>
@@ -39,13 +56,16 @@ export default function Navbar() {
                 href={link.href}
                 className={cn(
                   "font-mono text-sm tracking-wide transition-colors",
-                  activeId === link.id ? "text-cyan text-glow-cyan" : "text-ink-dim hover:text-ink"
+                  activeId === link.id
+                    ? "text-cyan text-glow-cyan"
+                    : "text-ink-dim hover:text-ink"
                 )}
               >
                 {activeId === link.id ? `> ${link.label}` : link.label}
               </a>
             </li>
           ))}
+
           <li>
             <a
               href="#contact"
@@ -56,15 +76,21 @@ export default function Navbar() {
           </li>
         </ul>
 
+        {/* Mobile Menu Button */}
         <button
           aria-label={open ? "Close menu" : "Open menu"}
           className="text-ink md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {open ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </nav>
 
+      {/* Mobile Navigation */}
       {open && (
         <div className="border-t border-line bg-void/95 px-6 py-6 md:hidden">
           <ul className="flex flex-col gap-5">
@@ -73,12 +99,27 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="font-mono text-base text-ink-dim hover:text-cyan"
+                  className={cn(
+                    "font-mono text-base transition-colors",
+                    activeId === link.id
+                      ? "text-cyan"
+                      : "text-ink-dim hover:text-cyan"
+                  )}
                 >
-                  {link.label}
+                  {activeId === link.id ? `> ${link.label}` : link.label}
                 </a>
               </li>
             ))}
+
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setOpen(false)}
+                className="inline-block clip-corner border border-red/60 px-4 py-2 font-mono text-sm text-red transition-colors hover:bg-red/10"
+              >
+                Let's talk
+              </a>
+            </li>
           </ul>
         </div>
       )}

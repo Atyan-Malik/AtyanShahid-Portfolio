@@ -11,7 +11,7 @@ export default function Experience() {
   return (
     <section id="experience" className="relative px-6 py-24 sm:px-10">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="// git log --work" title="Experience & builds" />
+        <SectionHeading eyebrow="// work history" title=" Experience , builds & Education " />
 
         <VerticalTimeline lineColor="#1c242c">
           {EXPERIENCE.map((item, i) => {
@@ -36,7 +36,7 @@ export default function Experience() {
                 dateClassName="!font-mono !text-ink-dim !text-xs sm:!text-sm"
               >
                 <span className="font-mono text-xs uppercase tracking-widest text-cyan">
-                  {item.tag === "work" ? "role" : "project"}
+                  {item.tag === "work" ? "role" : "education"}
                 </span>
                 <h3 className="font-display mt-1 text-xl font-bold text-ink">{item.role}</h3>
                 <h4 className="mt-1 font-mono text-sm text-red">{item.org}</h4>

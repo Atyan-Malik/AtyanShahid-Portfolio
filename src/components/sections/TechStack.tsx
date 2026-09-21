@@ -8,7 +8,7 @@ export default function TechStack() {
   return (
     <section id="stack" className="relative px-6 py-24 sm:px-10">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading eyebrow="// market watch" title="Tech stack" />
+        <SectionHeading eyebrow="//  tools & technologies " title="Tech stack" />
 
         <div className="grid gap-4 sm:grid-cols-2">
           {TECH_STACK.map((group, i) => (
