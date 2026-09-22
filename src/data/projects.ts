@@ -122,7 +122,7 @@ const projects = [
     source_code_link:
       "https://github.com/Atyan-Malik/Next.js-CarService-Web-AutoCare",
     liveLink:
-      "https://github.com/Atyan-Malik/Next.js-CarService-Web-AutoCare",
+      "https://next-js-car-service-web-auto-care.vercel.app/",
   },
 
   {
@@ -147,7 +147,7 @@ const projects = [
     source_code_link:
       "https://github.com/Atyan-Malik/MERN-Stack-Medico-Health-Care-Website.git",
     liveLink:
-      "https://github.com/Atyan-Malik/MERN-Stack-Medico-Health-Care-Website.git",
+      "https://mern-stack-medico-health-care-websi.vercel.app/",
   },
 
   
